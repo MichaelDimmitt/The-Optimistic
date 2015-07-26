@@ -1,4 +1,4 @@
-tarting out with an equation on an optimistic gpa.
-first from entering of grades.
-secondly rendering from entering of gpa and number of credit hours.
-
+TheHopefulGPA asks what the schools required credit hours are for graduation.
+then the program takes in the students current GPA and current credit hours.
+and computes the highest possible gpa a student can achieve
+if they earned straight A-s from that point to graduation.
