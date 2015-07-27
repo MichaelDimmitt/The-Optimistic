@@ -5,7 +5,6 @@ public class TheHopefulGPA {
 	public static void main(String args[]) {
 		MathHouse math = new MathHouse();
 		math.equation();
-
 	}
 }
 
@@ -13,7 +12,6 @@ class MathHouse {
 	double creditsForGraduation;
 	double currentGPA;
 	double creditsAtTheMoment;
-
 	void equation() {// test every user input for
 						// each time scanner happens i want it to do this..
 						// if text
@@ -26,7 +24,6 @@ class MathHouse {
 			if (100 < creditsForGraduation && creditsForGraduation < 150) {
 				b = false;
 				this.creditsForGraduation = creditsForGraduation;
-
 			} else
 				System.err.println("error, wrong input!");
 		}
@@ -54,12 +51,12 @@ class MathHouse {
 		// enter grades
 		// amounts to how many credits?
 		// enter number of credits for graduation.
-		double maxGPA = (4 * creditsForGraduation); // checked
-		double maxAtMomentGPA = (4 * creditsAtTheMoment); //
-		double work = (currentGPA * creditsAtTheMoment);
-		double loss = maxAtMomentGPA - work;
-		double maxPossible = maxGPA - loss;
-		double possibleGPA = maxPossible / creditsForGraduation;
+		double maxAtMomentGPA   = (4 * creditsAtTheMoment); //
+		double currentAtMoment  = (currentGPA * creditsAtTheMoment);
+		double loss             = maxAtMomentGPA - currentAtMoment;
+		double maxGPA           = (4 * creditsForGraduation); // checked
+      double maxPossible      = maxGPA - loss;
+      double possibleGPA      = maxPossible / creditsForGraduation;
 		System.out.println("your possible GPA is... " + possibleGPA);
 
 	}
