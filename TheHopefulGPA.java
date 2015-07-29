@@ -1,8 +1,10 @@
+import java.io.File;
+import java.io.PrintWriter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TheHopefulGPA {
-	
+
 	public static void main(String args[]) {
 		MathHouse math = new MathHouse();
 		math.equation();
@@ -13,6 +15,7 @@ class MathHouse {
 	double creditsForGraduation;
 	double currentGPA;
 	double creditsAtTheMoment;
+
 	void equation() {// test every user input for
 						// each time scanner happens i want it to do this..
 						// if text
@@ -23,18 +26,50 @@ class MathHouse {
 			int b = 1;
 			while (b == 1) {
 				try {
+					// //////////////////////////////////////////////////////////////////////
+					//
 					System.out
 							.println("Hello, what amount of credit hours are required for graduation?");
-					double creditsForGraduation = sc.nextInt();// 129
+					int creditsForGraduation = sc.nextInt();// 129
 					if (100 < creditsForGraduation
 							&& creditsForGraduation < 150) {
 						b = 2;
+						File output = new File("output.txt");
+						if (new File("output.txt").isFile()) {
+
+							System.out.println();
+						} else {
+							try {
+
+								output.createNewFile();
+								PrintWriter printer = new PrintWriter(output);
+								printer.print(creditsForGraduation);
+								printer.close();
+								System.out.println("file made!");
+							} catch (Exception e) {
+								e.printStackTrace();
+								System.out.println("could not make file");
+							}
+						}
 						this.creditsForGraduation = creditsForGraduation;
-					} else
+
+						// also set it up to
+						// if file exists...read from file
+						// if doesnt exist... take university policy on credits
+						// to graduation...make file for next time
+						// ...on next time... if file exists...read from file.
+
+					}
+
+					else
 						System.err.println("error, wrong input!");
 				} catch (InputMismatchException e) {
 					sc.next();
 				}
+				//
+				//
+				// //////////////////////////////////////////////////////////////////////
+				//
 				while (b == 2) {
 					try {
 						System.out.println("Hello, what is your GPA?");
@@ -78,8 +113,13 @@ class MathHouse {
 			sc.close();
 		}
 	}
-	
+
 	void input() {
 		// for if i wanted to do something with the scanner
+
+		// System.out.println("You Have moved from the Ideal ... many points per Credit hour.");
+		// System.out.println("You Have moved from the Ideal ... many points per Credit hour.");
+		// System.out.println("You Have moved from the Ideal ... many points per Credit hour.");
 	}
+
 }
