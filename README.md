@@ -4,7 +4,7 @@
 * then computes the highest possible gpa a student can achieve-    
 * if they earn straight A-s from that point untill graduation.  
    
-##    Additional Set up in place  
+##    Additional parts Set up (in place)  
 * Project set up so that off of one java file - after initial user input:  
 * Because user will be from same institution, program makes a file for the project storing that input.    
                                                          ```try {  
