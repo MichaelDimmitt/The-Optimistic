@@ -1,8 +1,8 @@
 # H2 TheHopefulGPA  
-    Asks what the school's required credit hours are for graduation.  
+    -Asks what the school's required credit hours are for graduation.  
     *then the program takes in the students current GPA and current credit hours.    
     *then computes the highest possible gpa a student can achieve-    
-    if they earn straight A-s from that point untill graduation.  
+    +if they earn straight A-s from that point untill graduation.  
    
 # H2 Additional Set up in place  
     *project set up so that off of one java file - after initial user input:  
