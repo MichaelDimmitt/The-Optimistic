@@ -9,7 +9,7 @@
 * Because user will be from same institution, program makes a file for the project storing that input.     
 
 	                                                   
-							try {
+							try {//make .txt file, inside project, for user.
 								output.createNewFile();  
 								PrintWriter printer = new PrintWriter(output);  
 								printer.print(creditsForGraduation);  
