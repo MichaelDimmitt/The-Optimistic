@@ -6,8 +6,8 @@
    
 ##    Additional Set up in place  
 * Project set up so that off of one java file - after initial user input:  
-* Because user will be from same institution, program makes a file for the project storing that input.  
-                                                 ```try {
+* Because user will be from same institution, program makes a file for the project storing that input.    
+                                                         ```try {
 
 								output.createNewFile();
 								PrintWriter printer = new PrintWriter(output);
