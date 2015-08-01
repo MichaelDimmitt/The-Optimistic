@@ -5,9 +5,9 @@
 * if they earn straight A-s from that point untill graduation.  
    
 ##    Additional Set up in place  
-* project set up so that off of one java file - after initial user input:  
+* Project set up so that off of one java file - after initial user input:  
 * Because user will be from same institution, program makes a file for the project storing that input.  
-* set up with a check to see if the file is made.  
+* Set up with a check to see if the file is made.  
 * If the file is made it should skip the first prompt and move on to the second and third -(this functionality currently in progress)  
     
 ##   Functionality to be Added  
