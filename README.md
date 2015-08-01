@@ -7,8 +7,8 @@
 ##    Additional parts Set up (in place)  
 * Project set up so that off of one java file - after initial user input:  
 * Because user will be from same institution, program makes a file for the project storing that input.
-							```
-                                                         //making the text file
+						```
+                                                //making the text file
                                                          try {  
 								output.createNewFile();  
 								PrintWriter printer = new PrintWriter(output);  
@@ -19,8 +19,8 @@
 								e.printStackTrace();  
 								System.out.println("could not make file");  
 							}
-							//end of making text file
-							```  
+						//end of making text file
+						```  
 * Set up with a check to see if the file is made.  
 * If the file is made it should skip the first prompt and move on to the second and third -(this functionality currently in progress)  
     
