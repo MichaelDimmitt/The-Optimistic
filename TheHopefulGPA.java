@@ -99,6 +99,19 @@ class MathHouse {
 					}
 				}
 			}
+			
+//adding additional grades after
+			/*if already entered
+			System.out.println(are there additional grades from this semester that you would like to enter?);
+			scanner... (assuming each grade is 3 credits)
+			//key [for assigning letter]
+			int letter = 4 or 3 or 2 or 1 or 0
+			for(each time scanner used)
+			{
+			creditsAtTheMoment = creditsAtTheMoment+3;
+			maxAtMomentGPA = letter + maxAtMomentGPA;
+			}
+			*/
 			// enter grades
 			// amounts to how many credits?
 			// enter number of credits for graduation.
