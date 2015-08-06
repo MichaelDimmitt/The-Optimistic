@@ -112,6 +112,26 @@ class MathHouse {
 			maxAtMomentGPA = letter + maxAtMomentGPA;
 			}
 			*/
+//Initial input setting protocol for future make and interpretation of files
+			/*
+			System.out.println(Hello, are you a student/ advisor... type the identifyer below)
+			scanner...input
+			switch(input)
+			case("student"):System.out.println("enter your name");
+			string name = input
+			store current... store ,,, credits to this point... credits to graduation... current gpa.
+			On next run... System.out.println("is this " + name + " (y/n)" );
+***			on yes ... resd file: credits to this point ... credits to graduation... current gpa
+//			ask... System.out.println("enter new grades from this semester (y/n) -  
+//			or start putting in letter grades and it will be updated automatically")
+			case("advisor"):
+			//dont ask name not needed...
+			System.out.println("same institution? (y/n)");
+***			on yes(build with credits to graduation) 
+			
+*******			//for both of these if "n"... destroy made file start a-new unless feedback to otherwise 
+*******			//to build an array to pick the different files.
+			*/
 			// enter grades
 			// amounts to how many credits?
 			// enter number of credits for graduation.
