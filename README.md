@@ -25,6 +25,7 @@
     
 ##   Functionality to be Added  
 * Automatically understanding Upper GPA Hopeful/ LowerGPA hopeful  
+* check whether advisor student undergrad or student grad. -advisor leaves neutral --others make difference.
 * Setting up for student... remembering where student was in amount of creeit hours completed and the institutional hours to * * graduation.    
 * Grades could then be entered as per what the student achieved that semester to see how each one influences overall gpa.  
 * Have info in some corner on how much one grade in one class will effect GPA.  
