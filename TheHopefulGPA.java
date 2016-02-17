@@ -8,8 +8,8 @@ public class TheHopefulGPA {
 	public static void main(String args[]) {
 		MathHouse math = new MathHouse();
 		math.equation();
-	}
-}
+	}//emd main()
+}//end class TheHopefulGPA()
 
 class MathHouse {
 	double creditsForGraduation;
@@ -28,13 +28,16 @@ class MathHouse {
 				try {
 					// //////////////////////////////////////////////////////////////////////
 					//
-					System.out
-							.println("Hello, what amount of credit hours are required for graduation?");
+					System.out.println("Hello, what amount of credit hours are required for graduation?");
 					int creditsForGraduation = sc.nextInt();// 129
 					if (100 < creditsForGraduation
 							&& creditsForGraduation < 150) {
 						b = 2;
 						File output = new File("output.txt");
+					
+						/*allows returning customers to be remembered.
+						possible added functionality to enter 
+						semester grades instead of whole college parameters.*/
 						if (new File("output.txt").isFile()) {
 
 							System.out.println();
@@ -49,27 +52,16 @@ class MathHouse {
 							} catch (Exception e) {
 								e.printStackTrace();
 								System.out.println("could not make file");
-							}
+							}//handling any issue where file cannot be made.
 						}
 						this.creditsForGraduation = creditsForGraduation;
-
-						// also set it up to
-						// if file exists...read from file
-						// if doesnt exist... take university policy on credits
-						// to graduation...make file for next time
-						// ...on next time... if file exists...read from file.
-
 					}
-
 					else
 						System.err.println("error, wrong input!");
 				} catch (InputMismatchException e) {
 					sc.next();
-				}
-				//
-				//
-				// //////////////////////////////////////////////////////////////////////
-				//
+				}//handling input that is not an integer.
+				
 				while (b == 2) {
 					try {
 						System.out.println("Hello, what is your GPA?");
@@ -81,11 +73,10 @@ class MathHouse {
 							System.err.println("error, wrong input!");
 					} catch (InputMismatchException e) {
 						sc.next();
-					}
+					}//handling input that is not an integer.
 					while (b == 3) {
 						try {
-							System.out
-									.println("Hello, how many credit hours are completed at the moment?");
+							System.out.println("Hello, how many credit hours are completed at the moment?");
 							double creditsAtTheMoment = sc.nextInt();// 92
 							if (0 <= creditsAtTheMoment
 									&& creditsAtTheMoment <= creditsForGraduation) {
@@ -95,46 +86,11 @@ class MathHouse {
 								System.err.println("error, wrong input!");
 						} catch (InputMismatchException e) {
 							sc.next();
-						}
+						}//handling input that is not an integer.
 					}
 				}
 			}
 			
-//adding additional grades after
-			/*if already entered
-			System.out.println(are there additional grades from this semester that you would like to enter?);
-			scanner... (assuming each grade is 3 credits)
-			//key [for assigning letter]
-			int letter = 4 or 3 or 2 or 1 or 0
-			for(each time scanner used)
-			{
-			creditsAtTheMoment = creditsAtTheMoment+3;
-			maxAtMomentGPA = letter + maxAtMomentGPA;
-			}
-			*/
-//Initial input setting protocol for future make and interpretation of files
-			/*
-			System.out.println(Hello, are you a student/ advisor... type the identifyer below)
-			scanner...input
-			switch(input)
-			case("student"):System.out.println("enter your name");
-			string name = input
-			store current... store ,,, credits to this point... credits to graduation... current gpa.
-			On next run... System.out.println("is this " + name + " (y/n)" );
-***			on yes ... resd file: credits to this point ... credits to graduation... current gpa
-//			ask... System.out.println("enter new grades from this semester (y/n) -  
-//			or start putting in letter grades and it will be updated automatically")
-			case("advisor"):
-			//dont ask name not needed...
-			System.out.println("same institution? (y/n)");
-***			on yes(build with credits to graduation) 
-			
-*******			//for both of these if "n"... destroy made file start a-new unless feedback to otherwise 
-*******			//to build an array to pick the different files.
-			*/
-			// enter grades
-			// amounts to how many credits?
-			// enter number of credits for graduation.
 			double maxAtMomentGPA = (4 * creditsAtTheMoment); //
 			double currentAtMoment = (currentGPA * creditsAtTheMoment);
 			double loss = maxAtMomentGPA - currentAtMoment;
@@ -144,8 +100,8 @@ class MathHouse {
 			System.out.println("your possible GPA is... " + possibleGPA);
 			running = false;
 			sc.close();
-		}
-	}
+		}//end while()
+	}//end class equation()
 
 	void input() {
 		// for if i wanted to do something with the scanner
@@ -155,4 +111,4 @@ class MathHouse {
 		// System.out.println("You Have moved from the Ideal ... many points per Credit hour.");
 	}
 
-}
+}//end class MathHouse()
