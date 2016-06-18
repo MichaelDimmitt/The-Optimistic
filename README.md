@@ -14,7 +14,7 @@
 						} 
 						else 
 						{
-	                                                //make .txt file, inside project, for user.   
+							//make .txt file, inside project, for user.   
 							try {
 								output.createNewFile();  
 								PrintWriter printer = new PrintWriter(output);  
