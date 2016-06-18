@@ -7,6 +7,13 @@
 ##    Additional parts Set up (in place)  
 * Because user will be from same institution, program makes a file for the project, storing input.     
 
+
+						if (new File("output.txt").isFile()) 
+						{
+							System.out.println();
+						} 
+						else 
+						{
 	                                                //make .txt file, inside project, for user.   
 							try {
 								output.createNewFile();  
@@ -17,7 +24,8 @@
 							} catch (Exception e) {  
 								e.printStackTrace();  
 								System.out.println("could not make file");  
-							}  
+							}
+						}
 
 * Set up with a check to see if the file is made.  
 * If the file is made it should skip the first prompt and move on to the second and third -(this functionality currently in progress)  
