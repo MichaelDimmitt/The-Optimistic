@@ -5,11 +5,10 @@
 * if they earn straight A-s from that point untill graduation.  
    
 ##    Additional parts Set up (in place)  
-* Project set up so that off of one java file - after initial user input:  
-* Because user will be from same institution, program makes a file for the project storing that input.     
+* Because user will be from same institution, program makes a file for the project, storing input.     
 
-	                                                   
-							try {//make .txt file, inside project, for user.
+	                                                //make .txt file, inside project, for user.   
+							try {
 								output.createNewFile();  
 								PrintWriter printer = new PrintWriter(output);  
 								printer.print(creditsForGraduation);  
